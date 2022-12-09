@@ -40,10 +40,10 @@ export default {
   computed: {
     classes() {
       return {
-        'storybook-button': true,
-        'storybook-button--primary': this.primary,
-        'storybook-button--secondary': !this.primary,
-        [`storybook-button--${this.size}`]: true,
+        'storybook-test-button': true,
+        'storybook-test-button--primary': this.primary,
+        'storybook-test-button--secondary': !this.primary,
+        [`storybook-test-button--${this.size}`]: true,
       }
     },
     style() {
