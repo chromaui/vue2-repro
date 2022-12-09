@@ -12,7 +12,7 @@
     "lint": "yarn lint:js && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
     "storybook": "nuxt storybook",
-    "build-storybook": "nuxt storybook build -- --webpack-stats-json storybook-static"
+    "build-storybook": "nuxt storybook build"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
