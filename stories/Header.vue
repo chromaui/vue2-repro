@@ -30,19 +30,19 @@
           >Welcome, <b>{{ user.name }}</b
           >!</span
         >
-        <my-button
+        <test-button
           size="small"
           @onClick="onLogout"
           label="Log out"
           v-if="user"
         />
-        <my-button
+        <test-button
           size="small"
           @onClick="onLogin"
           label="Log in"
           v-if="!user"
         />
-        <my-button
+        <test-button
           primary
           size="small"
           @onClick="onCreateAccount"
@@ -56,12 +56,12 @@
 
 <script>
 import './header.css'
-import MyButton from './Button.vue'
+import TestButton from './TestButton.vue'
 
 export default {
   name: 'my-header',
 
-  components: { MyButton },
+  components: { TestButton },
 
   props: {
     user: {
